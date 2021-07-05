@@ -3,21 +3,21 @@
 This code is designed to create a telegram message every day with a masternodeoverview of the current running and minting masternodes and some daily statistics. For this purpose some masternodepool APIs are collected and merged together with a current list of masternodes of the defichain and then compared to the state of the masternodes 24h ago. Every run of the code stores the current state to the local memory. 
 
 ### Example telegram message
-<code>Count masternodes<br />
-24h blocks (mean searchtime)<br />
-------------------<br />
-total     8319<br />
-7688 ( 1.1 days)<br />
-------------------<br />
-cakedefi  7350<br />
-6829 ( 1.1 days)<br />
-community  846<br />
- 742 ( 1.1 days)<br />
-mydeficha  120<br />
- 117 ( 1.0 days)<br />
-Nodehub      3<br />
- n/a ( inf days)<br />
------------------- </code>
+<code>Count masternodes</code><br>
+<code>24h blocks (mean searchtime)</code><br>
+<code>------------------</code><br>
+<code>total     8319</code><br>
+<code>7688 ( 1.1 days)</code><br>
+<code>------------------</code><br>
+<code>cakedefi  7350</code><br>
+<code>6829 ( 1.1 days)</code><br>
+<code>community  846</code><br>
+<code> 742 ( 1.1 days)</code><br>
+<code>mydeficha  120</code><br>
+<code> 117 ( 1.0 days)</code><br>
+<code>Nodehub      3</code><br>
+<code> n/a ( inf days)</code><br>
+<code>------------------ </code><br>
 
 ### Installation
 1. Install python3.9<code>sudo apt-get install python3.9</code>
