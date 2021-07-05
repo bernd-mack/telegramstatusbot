@@ -128,5 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-/statusbot/statusbot.log
 credentials.py
+/statusbot/statusbot.log
