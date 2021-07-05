@@ -151,7 +151,7 @@ Nodehub     {mn_count["new_nodehub"]:4}
 
     # send the message to the telegrambot with the given chatid
     print(telegramtext)
-    requests.get(f'https://api.telegram.org/{telegram_token}/sendMessage?chat_id={telegram_chatid}&parse_mode=HTML&text={telegramtext}')
+    requests.get(f'https://api.telegram.org/{telegram_token_statusbot}/sendMessage?chat_id={telegram_chatid_mydefichain}&parse_mode=HTML&text={telegramtext}')
 
 except Exception as e:
     print (f"Error while fetching data {e}")
