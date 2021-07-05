@@ -101,7 +101,7 @@ try:
     cakenodes = get_cake_nodes("https://api.cakedefi.com/nodes?order=status&orderBy=DESC")
     cakenodes["cakedefi"] = True
     # get mydefichain nodes and mark with new column "mydefichain"
-    mydefichain = get_mydefichain_nodes("mydefichainnodes.txt") # ToDo change to public API of masternods which are running at mydefichain
+    mydefichain = get_mydefichain_nodes("mydefichainnodes.txt") # ToDo change to public API of masternodes which are running at mydefichain
     mydefichain["mydefichain"] = True
 
     # merge the old listmasternodes, the cakenodes and the mydefichain nodes to the current listmasternode
@@ -135,16 +135,16 @@ try:
     telegramtext = f"""<code>Count masternodes
 24h blocks (mean searchtime)
 ------------------
-total     {mn_count["new_all"]:4}
+total       {mn_count["new_all"]:4}
 {blocks_minted["diff_all"]:4} ({mn_count["new_all"]/blocks_minted["diff_all"]:4.1f} days)
 ------------------
-cakedefi  {mn_count["new_cake"]:4}
+cakedefi    {mn_count["new_cake"]:4}
 {blocks_minted["diff_cake"]:4} ({mn_count["new_cake"]/blocks_minted["diff_cake"]:4.1f} days)
-community {mn_count["new_unassigned"]:4}
+community   {mn_count["new_unassigned"]:4}
 {blocks_minted["diff_unassigned"]:4} ({mn_count["new_unassigned"]/blocks_minted["diff_unassigned"]:4.1f} days)
-mydeficha {mn_count["new_mydefichain"]:4}
+mydefichain {mn_count["new_mydefichain"]:4}
 {blocks_minted["diff_mydefichain"]:4} ({mn_count["new_mydefichain"]/blocks_minted["diff_mydefichain"]:4.1f} days)
-Nodehub   {mn_count["new_nodehub"]:4}
+Nodehub     {mn_count["new_nodehub"]:4}
  n/a ( inf days)
 ------------------</code>
 <a href="https://mydeficha.in/">mydefichain - Make DefiChain decentralized!</a>"""
