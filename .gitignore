@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 /statusbot/statusbot.log
+credentials.py
