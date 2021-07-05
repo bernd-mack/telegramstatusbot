@@ -1,7 +1,7 @@
 import requests
 import os
 import logging
-from credentials import telegram_token, telegram_chatid
+from credentials import telegram_token_statusbot, telegram_chatid_mydefichain
 import pandas as pd
 import datetime
 
